@@ -1,0 +1,39 @@
+body{
+    background-color: #b5dfd6;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+input,label{
+    display: block;
+}
+.main-container{
+    width:600px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    background-color: aliceblue;
+    display: flex;
+}
+
+.tip-container{
+    float: right;
+    width: 200px;
+    background-color: green;
+}
+
+.percentagebutton{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(65px, 1fr));
+}
+.box>* {
+    flex: 1 1 160px;
+}
+.per{
+    height: 30px;
+    margin: 3px;
+}
