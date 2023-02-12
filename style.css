@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
 body{
-    
+    font-size: 15px;
     font-family: 'Dosis', sans-serif;
     background-color: #b5dfd6;
 }
@@ -14,7 +14,8 @@ input,label{
 }
 
 input{
-
+    font-family: inherit;
+    font-size: 14px;
     padding:5px;
     height:30px;
     width: 100%;
@@ -26,13 +27,16 @@ input{
 .main-container{
     border-radius: 10px;
     width:600px;
-    height: 300px;
+    height: 280px;
     position: absolute;
     top: 50%;
     right: 50%;
     transform: translate(50%, -50%);
     background-color: white;
     display: flex;
+}
+.tip{
+    margin-top: 30px;
 }
 .bill-container{
     margin: 20px;
@@ -45,6 +49,22 @@ input{
     float: right; width: 50%;
     background-color: #205E61;
 }
+.display-tip-calc{
+    font-size: 12px;
+    margin: 20px;
+}
+.amount-display{
+    color: #b5dfd6;
+    font-weight:900;
+    font-size: larger;
+    float: right;
+}
+.tip-amount-total{
+    margin: 15px;
+}
+.person{
+    display: block;
+}
 
 .percentagebutton{
     margin: 0px 20px 20px 20px;
@@ -53,6 +73,8 @@ input{
 }
 
 .per{
+    cursor: pointer;
+    font-size: 14px;
     border: none;
     border-radius: 3px;
     height: 30px;

@@ -13,7 +13,7 @@
         <div class="bill-container">
             <label for="bill">Bill</label>
             <input type="text" inputmode="numeric" id="bill" placeholder="$">
-                <p>Select Tip%</p>
+                <p class="tip">Select Tip%</p>
                     <div class="percentagebutton">
                         <button class="per">5%</button>
                         <button class="per">10%</button>
@@ -26,9 +26,13 @@
             <input type="text" inputmode="numeric" id="noOfPeople" placeholder="👤">
         </div>
         <div class="tip-container">
-            hello
+            <div class="display-tip-calc">
+                <p class="tip-amount-total"> Tip Amount <span class="amount-display">$ 0.00</span><span class="person">/ Person</span></p>
+                <p class="tip-amount-total"> Total <span class="amount-display">$ 0.00</span><span class="person">/ Person</span></p>
+                <button class="reset-btn" id="reset-btn">Reset</button>
+            </div>
         </div>
     </div>
-    
+    <script src="/script.js"></script>
 </body>
 </html>
